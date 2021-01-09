@@ -14,9 +14,267 @@
 </head>
 
 <body>
-    <div class="container text-center mt-4">
-        <h1>Rangkaian Listrik</h1>
-        <p> Nanti disini akan ada materi mengenai Rangkaian Listrik</p>
+    <style>
+        p.a {
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        code {
+            text-align: center;
+            display: block;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light my-2">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Rangkaian Listrik</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#seri">Rangkaian Seri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#paralel">Rangkaian Paralel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#daya">Energi dan Daya</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#contoh">Contoh Soal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card mb-4">
+            <div class="card-header fw-bold">
+                Daftar Materi
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Rangkaian Listrik</h5>
+                <ul>
+                    <li>Rangkaian Seri</li>
+                    <li>Rangkaian Paralel</li>
+                    <li>Energi dan Daya
+                        <ul>
+                            <li>Usaha/Energi Listrik</li>
+                            <li>Daya Listrik</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Card Seri -->
+        <div class="card mb-4" id="seri">
+            <div class="card-body">
+                <h2>Rangkaian Seri</h2>
+                <p class="a">Rangkaian seri juga disebut rangkaian berderet. Sebuah
+                    rangkaian listrik
+                    disebut rangkaian seri jika dalam rangkaian tersebut hanya ada satu ringkasan yang dilalui arus
+                    listrik seri dimana muatan listrik yang masuk pada lampu satu sebagai resistor pertama sama dengan
+                    muatan yang keluar dari resistor tersebut kemudian muatan yang sama masuk lagi ke resistor
+                    berikutnya.</p>
+                <figcaption class="figura-caption fw-bold text-center">Ilustrasi Rangkaian Seri</figcaption>
+                <figure class="figure">
+                    <img src="https://i.ibb.co/qrVSKFn/New-Project.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-center"><strong>(a)</strong> Susunan seri dari bola lampu
+                        dengan resistansi R<sub>1</sub>
+                        dan R<sub>2</sub>. <strong>(b)</strong> Diagram rangkaian untuk rangkaian dua hambatan.
+                        <strong>(c)</strong> hambatan diganti dengan satu
+                        hambatan ekuivalen.</figcaption>
+                </figure>
+                <p class="a">Muatan listrik yang melalui R<sub>1</sub> juga akan melalui R<sub>2</sub> dan
+                    R<sub>3</sub>.
+                    Dengan dsubikian, arus I yang
+                    sama melewati setiap resistor. Jika V menyatakan tegangan pada ketiga resistor, maka V
+                    sama dengan tegangan sumber (baterai). V<sub>1</sub> dan V<sub>3</sub> adalah beda potensial pada
+                    masingmasing resistor R<sub>1</sub>
+                    dan R<sub>2</sub>. Berdasarkan Hukum Ohm. </p>
+                <code>V<sub>1</sub> = I.R<sub>1</sub> dan V<sub>2</sub> =
+                    I.R<sub>2</sub></code>
+                <p class="a">Karena resistor-resistor tersebut dihubungkan secara seri, kekekalan energi menyatakan
+                    bahwa tegangan total V sama dengan jumlah semua tegangan dari masing-masing resistor </p>
+                <code>V = V<sub>1</sub> + V<sub>2</sub> = I.R<sub>1</sub> +
+                    I.R<sub>2</sub></code>
+                <p class="a"> Hambatan total pengganti susunan seri resistor (R<sub>s</sub>) yang terhubung dengan
+                    sumber
+                    tegangan (V ) dirumuskan pada Persamaan </p>
+                <code>V = I.Rs</code>
+                <p class="a">Berdasarkan beberapa bersamaan di atas maka didapatkan persamaan sebagai berikut</p>
+                <code>R<sub>s</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + …
+                </code>
+                <p class="a">Persamaan tersebut menunjukkan bahwa hambatan total pengganti untuk rangkaian
+                    hambatan seri adalah jumlah keseluruhan hambatan yang terlibat dalam rangkaian tersebut.</p>
+
+            </div>
+        </div>
+
+        <!-- Card Paralel -->
+        <div id="paralel" class="card mb-4">
+            <div class="card-body">
+                <h2>Rangkaian Paralel</h2>
+                <p class="a">
+                    Rangkaian Paralel adalah salah satu rangkaian listrik yang disusun secara berderet
+                    (paralel). Lampu yang dipasang di rumah umumnya merupakan
+                    rangkaian paralel. Rangkain listrik paralel adalah suatu rangkaian listrik, di mana semua input
+                    komponen berasal dari sumber yang sama. Semua komponen satu sama lain tersusun
+                    paralel. Karena susunan yang demikian memerlukan jumlah kabel yang cukup banyak
+                    sehingga membutuhkan biaya yang cukup mahal. Selain kelemahan tersebut susunan paralel
+                    memiliki kelebihan tertentu dibandingkan susunan seri. Adapun kelebihannya adalah jika
+                    salah satu komponen dicabut atau rusak, maka komponen yang lain tetap berfungsi
+                    sebagaimana mestinya.
+                </p>
+                <figcaption class="figura-caption fw-bold text-center">Ilustrasi Rangkaian Paralel</figcaption>
+                <figure class="figure">
+                    <img src="https://i.ibb.co/P9nDskj/New-Project-1.png" class="figure-img img-fluid rounded"
+                        alt="...">
+                    <figcaption class="figure-caption text-center"> <strong>(a) </strong> Rangkaian paralel dari dua
+                        bola lampu dengan
+                        resistansi R<sub>1</sub> dan R<sub>2</sub>. <strong>(b)</strong> Diagram rangkaian untuk
+                        rangkaian dua hambatan.
+                        <strong>(c)</strong> hambatan diganti
+                        dengan satu hambatan ekuivalen</figcaption>
+                </figure>
+                <p class="a">
+                    Bagaimana dengan sifat kuat arus yang lewat ke semua cabang? (hukum 1 Kirchhoff).
+                    Aliran muatan dapat diibaratkan dengan aliran air dari tempat tinggi ke tempat yang lebih
+                    rendah. Jika ada percabangan pada suatu titik maka aliran air itu akan terbagi. Besar aliran itu
+                    akan disesuaikan dengan hambatan yang ada pada setiap cabang. Yang terpenting pada
+                    pembagian itu adalah jumlah air yang terbagi harus sama dengan jumlah bagian-bagiannya.
+                    Sifat aliran air ini dapat menjelaskan bahwa kuat arus yang terbagi pada percabangan I harus sama
+                    dengan jumlah kuat arus setiap cabang
+                </p>
+                <code>I = I<sub>1</sub> + I<sub>2</sub></code>
+                <p class="a">Sesuai hukum Ohm maka kuat arus setiap cabang berbanding terbalik dengan
+                    hambatannya dengan nilia tegangan yang sama untuk tiap-tiap hambatan.</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/44HQ5yp/1.png" alt="1" border="0">
+                </div>
+                <p class="a">Hambatan penganti susunan paralel (RP) akan menarik arus (I) dari sumber yang
+                    besarnya sama dengan arus total ketiga hambatan paralel tersebut. Arus yang mengalir pada
+                    hambatan pengganti harus memenuhi:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/hYdZCLn/2.png" alt="2" border="0">
+                </div>
+                <p class="a"> Masukkan dua persamaan sebelumnya ke persamaan diatas, makan akan diperoleh hasil sebagai
+                    berikut:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/7tWpSTj/3.png" alt="3" border="0">
+                </div>
+                <p class="a">Jika kedua ruas dibagi dengan V maka akan didapatkan sebagai berikut:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/VN9bCBD/New-Project-2.png" alt="3" border="0">
+                </div>
+            </div>
+        </div>
+        <!-- Card Daya -->
+        <div class="card mb-4" id="daya">
+            <div class="card-body">
+                <h2>Energi dan Daya Listrik</h2>
+                <h4>Usaha/Energi Listrik</h4>
+                <p class="a"> Jika kita membahas tentang listrik maka tidak bisa lepas dari sumber arus. Misalnya
+                    baterai, akumulator atau generator (PLN). Sumber arus itu sering juga disebut sumber
+                    tegangan dan sebenarnya merupakan sumber energi. Energinya adalah energi listrik. Energi
+                    listrik adalah energi yang mampu menggerakkan muatan-muatan listrik pada suatu beda
+                    potensial tertentu.</p>
+                <p class="a">Energi listrik berguna untuk kita karena
+                    dapat diubah menjadi bentuk energi lain. Pada alat-alat listrik seperti
+                    pemanas listrik, kompor listrik, dan pengering
+                    rambut, energi listrik diubah menjadi energi
+                    panas pada hambatan kawat yang dikenal dengan
+                    nama “elemen pemanas”. Kemudian, pada
+                    banyak lampu , filamen kawat yang kecil menjadi
+                    sedemikian panas sehingga bersinar. Hanya
+                    beberapa persen energi listrik yang diubah
+                    menjadi cahaya tampak, dan sisanya lebih dari 90%
+                    menjadi energi panas.</p>
+                <p class="a">Energi listrik dapat diubah menjadi energi
+                    panas atau cahaya pada alat-alat listrik tersebut,
+                    karena arus biasanya agak besar, dan terjadi
+                    banyak tumbukan antara elektron dan atom pada
+                    kawat. Pada setiap tumbukan, terjadi transfer
+                    energi dari elektron ke atom yang ditumbuknya, sehingga energi kinetik atom bertambah dan
+                    menyebabkan suhu elemen kawat semakin tinggi.</p>
+                <p class="a">Usaha listrik (dalam joule) yang dibutuhkan untuk mengalirkan suatu muatan q (dalam
+                    coulomb) melewati suatu penghantar beda potensial V (dalam volt) ditentukan melalui
+                    Persamaan berikut:</p>
+                <code>W = qV</code>
+                <p style="text-align: justify;">Jika q dan V diberi tanda yang sesuai (sebagai contoh, potensial naik
+                    sebagai positif, dan
+                    potensial turun sebagai negatif), usaha akan memiliki tanda yang tepat. Jadi untuk
+                    mengalirkan muatan positif melewati kenaikan potensial, sejumlah usaha positif harus
+                    dilakukan terhadap muatan tersebut.</p>
+                <p style="text-align: justify;">Pada persamaan diatas kalian dapat mengetahui hubungan q dengan kuat
+                    arus I yaitu <strong>q = I t</strong>. Dengan substitusi nilai q ini diperoleh persamaan energi
+                    listrik seperti Persamaan berikut:</p>
+                <code class="fw-bold">W = V I t</code>
+                <small>
+                    <ul style="list-style-type:none">
+                        <li><strong>W</strong> = energi listrik yang diserap hambatan (joule)</li>
+                        <li><strong>V</strong> = beda potensial ujung-ujung hambatan (volt)</li>
+                        <li><strong>I</strong> = kuat arus yang mengalir pada hambatan (A)</li>
+                        <li> <strong>t</strong> = waktu aliran (s)</li>
+                    </ul>
+                </small>
+                <p class="a">Persamaan tersebut dikaitkan dengan hukum Ohm substitusikan V = IR pada persamaan
+                    sebelumnya,
+                    sehingga pada akhirnya akan mendapatkan hasil sebagai berikut:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/dJrjZZm/New-Project-3.png" alt="3" border="0">
+                </div>
+                <hr>
+                <h4>Daya Listrik (P)</h4>
+                <p class="a">Daya listrik dalam watt, yang dihasikan oleh sebuah sumber energi saat mengalikan
+                    muatan q (dalam coulomb) melewati kenaikan potensial V (dalam volt) dalam waktu t (dalam
+                    detik) adalah sebagai berikut.</p>
+                <code>Daya yang diselesaikan = <sup>kerja</sup>/<sub>waktu</sub></code>
+                <code>P = <sup>Vq</sup>/<sub>t</sub></code>
+                <p style="text-align: justify;">Karena q/t = I, persamaan ini dapat ditulis kembali sebagai sesuai
+                    Persamaan</p>
+                <code>P = VI</code>
+                <p>dengan I dalam ampere</p>
+                <p class="a"> Daya yang hilang dalam resistor ditentukan dengan megganti V pada VI dengan IR, atau
+                    mengganti I pada VI dengan V/R, untuk memperoleh Persamaan Berikut: </p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/cxnVN60/New-Project-4.png" alt="New-Project-4" border="0">
+                </div>
+            </div>
+
+        </div>
+        <!-- Contoh -->
+        <div class="card" id="contoh">
+            <div class="card-body">
+                <h2>Contoh Soal</h2>
+                <p class="a"> Tiga hambatan R<sub>1</sub> = 20 Ω, R<sub>2</sub> = 30 Ω dan R<sub>3</sub> = 50 Ω
+                    dirangkai seri dan dihubungkan
+                    pada beda potensial 4,5 volt seperti pada Gambar berikut. Tentukan (a)
+                    hambatan pengganti dan (b) beda potensial ujung-ujung hambatan R2!</p>
+                <h4>Penyelesaian</h4>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Hambatan pengganti seri memenuhi: <br>
+                        <strong>R<sub>s</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> = 20 + 30 + 50 = 100
+                            Ω</strong>
+                    </li>
+                    <li>Beda potensial ujung-ujung R<sub>2</sub> : V<sub>2</sub> dapat ditentukan dengan menghitung
+                        kuat
+                        arus terlebih dahulu
+                        <br>
+                        <strong>I<sub>2</sub> =
+                            <sup>𝑉</sup>/<sub>𝑅s</sub>=<sup>4,5 𝑉</sup>/<sub>100</sub>
+                            = 0,045 A</strong></li>
+                    <li style="list-style-type: none;">Dari nilai I2 ini dapat dihitung beda potensial V2 sebesar:<br>
+                        <strong>V = I<sub>2</sub> . R<sub>2</sub> = 0,045 . 30 = 1,35 volt</strong></li>
+                </ol>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 

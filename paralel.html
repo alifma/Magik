@@ -14,9 +14,152 @@
 </head>
 
 <body>
-    <div class="container text-center mt-4">
-        <h1>Hukum-Hukum Kelistrikan</h1>
-        <p> Nanti disini akan ada materi mengenai hukum-hukum kelistrikan</p>
+    <style>
+        p.a {
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        code {
+            text-align: center;
+            display: block;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light my-2">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Hukum-hukum Kelistrikan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#ohm">Hukum Ohm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#kirchoff1">Hukum Kirchoff I</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#kirchoff2">Hukum Kirchoff II</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card mb-4">
+            <div class="card-header fw-bold">
+                Daftar Materi
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Hukum-hukum Kelistrikan</h5>
+                <ul>
+                    <li>Rangkaian Ohm</li>
+                    <li>Rangkaian Kirchoff I</li>
+                    <li>Rangkaian Kirchoff II</li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Card ohm -->
+        <div class="card mb-4" id="ohm">
+            <div class="card-body">
+                <h2>Hukum Ohm</h2>
+                <p class="a">
+                    Perbedaan potensial dengan simbol V digunakan seperti Gambar di bawah, garis lurus yang
+                    dihasilkan berarti bahwa hambatan penghantar ini adalah sama sekali tidak perduli
+                    berapapun tegangan yang dipakaikan yang kita gunakan untuk mengukur arus tersebut. Hasil
+                    penting ini dikenal dengan hukum Ohm.
+                </p>
+                <p class="a">Hubungan V = IR bukanlah merupakan sebuah pernyataan hukum Ohm. Sebuah
+                    penghantar mengikuti hukum ini hanya jika kurva V-I nya linear, yakni R tak tergantung dari V
+                    dan I. Hubungan R = V/I tetap sebagai definisi umum hukum Ohm dari hambatan sebuah
+                    penghantar tak perduli apakah penghantar tersebut mengikuti hukum Ohm atau tidak.</p>
+                <figure class="figure text-center">
+                    <img src="https://i.ibb.co/cxnVN60/New-Project-4.png"
+                        class="figure-img text-center img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption ">Grafik Hubungan antara tegangan dengan kuat arus
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- Card kirchoff I -->
+        <div class="card mb-4" id="kirchoff1">
+            <div class="card-body">
+                <h2>Hukum Kirchoff I</h2>
+                <p class="a">Hukum I Kirchhoff dikenal sebagai hukum rangkaian bercabang, menyatakan bahwa
+                    jumlah kuat arus listrik yang menuju titik percabangan sama dengan jumlah kuat arus listrik
+                    yang meninggalkan titik percabangan itu seperti terlihat pada Gambar berikut</p>
+                <figure class="figure text-center">
+                    <img src="https://i.ibb.co/9qT9Yst/2021-01-10-00-52.png"
+                        class="figure-img text-center img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption ">Arus listrik yang masuk ke titik percabangan
+                    </figcaption>
+                </figure>
+                <p class="a">Gambar diatas menunjukkan beberapa arus listrik yang masuk ke sebuah titik
+                    percabangan dan kemudian keluar dari titik percabangan tersebut. Sesuai dengan hukum I
+                    Kirchhoff maka berlaku persamaan berikut:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/Zmj7tSN/hukum-1.png" class="img-fluid" alt="hukum-1" border="0">
+                </div>
+                <p class="a">Sehingga dari persamaan tersebut maka Gambar garis di atas dapat dituliskan secara
+                    matematis
+                    sebagai berikut:</p>
+                <ul style="list-style-type: none;">
+                    <p class="fw-bold fst-italic mb-0">&Sigma; i = 0</p>
+                    <p class="fw-bold fst-italic mb-0">i<sub>1</sub> + i <sub>2</sub> + i <sub>3</sub> - i <sub>4</sub>
+                        - i
+                        <sub>5</sub></p>
+                    <p class="fw-bold fst-italic mb-0">&Sigma; i masuk = &Sigma; i keluar</p>
+                    <p class="fw-bold fst-italic mb-0">i<sub>1</sub> + i <sub>2</sub> + i <sub>3</sub> = i <sub>4</sub>
+                        + i
+                        <sub>5</sub></p>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card kirchoff 2 -->
+        <div class="card mb-4" id="kirchoff2">
+            <div class="card-body">
+                <h2>Hukum Kirchoff II</h2>
+                <p class="a">Kaidah hukum kedua Kirchhoff dikenal juga dengan teorema simpal (loop theorem)
+                    yang menyatakan bahwa “jumlah aljabar dari perubahan-perubahan potensial yang
+                    ditemukan di dalam ssebuah lintasan lengkap dari satu titik ke titik yang sama (complete
+                    transversal) dari rangkaian tesebut haruslah sama dengan nol. Dalam rumusan matematis
+                    terlihat pada Persamaan berikut:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/v1K3gj1/kirchoff2.png" class="img-fluidd" alt="kirchoff2" border="0">
+                </div>
+                <p class="a">Untuk memahami teorema simpal ini terlebih untuk rangkaian kompleks diperlukan
+                    beberapa aturan sebagai berikut:</p>
+                <ul style="list-style-type:decimal;text-align: justify;">
+                    <li> Jika sebuah hambatan dilintasi di dalam arah arus, maka
+                        perubahan potensial adalah –iR (Gambar kirchoff 2-a); jika
+                        hambatan tersebut dilintasi di dalam arah yang
+                        berlawanan dengan arah arus maka perubahan
+                        potensial adalah + iR (kirchoff 2-b).</li>
+                    <li>Jika sebuah tempat kedudukan gaya gerak listrik (&Epsilon;)
+                        dilintasi dalam arah &epsilon; maka perubahan potensial adalah
+                        +&epsilon; (kirchoff 2-c); jika tempat kedudukan &epsilon; tersebut
+                        dilintasi di dalam arah yang berlawanan dengan arah &epsilon;
+                        maka perubhan potensial adalah -&epsilon; (kirchoff 2-d)</li>
+                    <figure class="figure text-center">
+                        <img src="https://i.ibb.co/fF02W8S/kirchoff-2.png"
+                            class="figure-img text-center img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption ">Aturan dalam
+                            menentukan beda potensial <br>
+                            Kirchoff 2
+                        </figcaption>
+                    </figure>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
