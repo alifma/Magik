@@ -14,9 +14,366 @@
 </head>
 
 <body>
-    <div class="container text-center mt-4">
-        <h1>Kelistrikan</h1>
-        <p> Nanti disini akan ada materi Mengenai Kelistrikan</p>
+    <style>
+        h2,
+        h4 {
+            font-weight: bold
+        }
+
+        p.a {
+            text-indent: 50px;
+            text-align: justify;
+        }
+
+        code {
+            text-align: center;
+            display: block;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+
+    <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light my-2">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Kelistrikan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#lstatis">Listrik Statis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#ldinamis">Listrik Dinami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#alatukur">Alat Ukur Listrik</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card mb-4">
+            <div class="card-header fw-bold">
+                Daftar Materi
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Kelistrikan</h5>
+                <ul>
+                    <li>Listrik Statis</li>
+                    <li>Listrik Dinamis</li>
+                    <li>Alat Ukur Listrik</li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Card Listrikstatis -->
+        <div class="card mb-4" id="lstatis">
+            <div class="card-body">
+                <h2>Listrik Statis</h2>
+                <h4>Muatan Listrik</h4>
+                <p class="a">Listrik (electricity) berasal dari kata Yunani elektron, yang berarti “amber”. Amber adalah
+                    pohon damar yang membatu, dan orang dulu mengetahui bahwa jika batang ambar digosok
+                    dengan kain, maka batang ambar itu akan menarik daun-daun kecil atau debu. Anda juga
+                    dapat membuat hal yang sama dengan batang ambar dengan menggunakan mistar atau
+                    batang kaca. Mistar digosok-gosok pada rambut kering kemudian didekatkan dengan
+                    serpihan kertas dan potongan-potongan kertas tersebut tertarik pada mistar. Efek tersebut
+                    disebut dengan listrik statis. Listrik sendiri didefinisikan sebagai aliran atau pergerakan
+                    elektron, yakni suatu partikel bermuatan negatif yang ditemukan pada setiap atom. Terkait
+                    dengan tertariknya serpihan kertas pada mistar yang sudah digosok dengan rambut
+                    disebabkan oleh adanya perbedaan muatan listrik. </p>
+                <figure class="text-center">
+                    <img src="https://i.ibb.co/tJpC0dJ/2021-01-10-01-58.png" class="img-fluid" alt="2021-01-10-01-58"
+                        border="0">
+                    <figcaption class="figure-caption">Mistar menarik kertas</figcaption>
+                </figure>
+                <p class="a">Muatan listrik ada dua yaitu muatan listrik positif dan muatan listrik negatif. Nama
+                    tersebut diberikan oleh negarawan, filsuf, dan ilmuan Amerika Benjamin Franklin (1706-
+                    1790). Jika dua benda saling bergesekan, maka elektron akan ditarik dari satu benda dan
+                    dilemparkan ke benda lain. Hal tersebut akan menyebabkan tumpukan elektron sehingga
+                    terjadi muatan negatif pada salah satu benda. Hilangnya elektron pada benda yang lain menyebabkan
+                    terjadinya muatan positif. Sebagai contoh penggaris plastis yang digosok
+                    dengan rambut atau handuk akan bermuatan negatif dan handuk bermuatan positif. Muatan
+                    yang sama jika didekatkan akan tolak menolak dan muatan yang berbeda jika didekatkan
+                    akan tarik menarik. </p>
+                <h4>Hukum Columb</h4>
+                <p class="a">Ilmuwan yang mengkaji gaya interaksi partikel-partikel bermuatasan secara rinci pada
+                    tahun 1784 adalah Charles Augustin de Coulomb (1736-1806). Coulomb menggunakan
+                    neraca punter seperti yang digunakan oleh Cavendish (menyelidiki interaksi antara bendabenda dan
+                    menemukan nilai konstanta Gravitasi). Dia menggunakan benda bermuatan yang
+                    dipisahkan dengan jarak r. Dari hasil penyelidikan tersebut, dia menemukan bahwa gaya
+                    listrik yang terjadi sebanding dengan 1/r<sup>2</sup>
+                    . Gaya listrik yang dihasilkan bergantung pada
+                    kuantitas muatan pada setiap benda yang dinyatakan dengan q atau Q.</p>
+                <p class="a">Untuk menyelidiki hubungan antara gaya listrik dengan kuantitas muatan, Coulomb
+                    membagi sebuah muatan ke dalam dua bagian yang sama dengan menempatkan sebuah
+                    konduktor bola kecil yang bermuatan, bersentuhan dengan sebuah bola identik tetapi tidak
+                    bermuatan. Dia mengamati bahwa gaya yang dikerahkan oleh kedua muatan titik Q<sub>1</sub> dan
+                    Q<sub>2</sub>
+                    pada satu sama lain adalah sebanding dengan setiap muatan jika jarak antar kedua muatan
+                    tetap sama. Oleh karena itu, dapat dikatakan gaya yang dikerahkan oleh kedua muatan
+                    tersebut sebanding dengan hasil kali Q<sub>1</sub> dengan Q<sub>2</sub> dari muatan itu dan
+                    berbanding terbalik
+                    terhadap kuadrat jarak r. Hasil penyelidikan Coulomb inilah yang menghasilkan sebuah
+                    hukum yang dikenal dengan Hukum Coulomb yaitu:</p>
+                <p class="text-secondary" style="text-align:justify">"Besarnya gaya listrik di antara dua muatan titik
+                    bebanding langsung dengan hasil kali besar muatan-muatan itu dan berbanding terbalik dengan kuadrat
+                    jarak diantara
+                    muatan-muatan tersebut"</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/b5q3C1k/2021-01-10-02-28.png" class="img-fluid" alt="2021-01-10-02-28"
+                        border="0">
+                </div>
+                <p class="a">Arah gaya yang dikerahkan oleh kedua muatan itu selalu berada disepanjang garis yang
+                    menghubungkan kedua muatan tersebut. Jika kedua muatan memiliki tanda yang sama misalnya positif
+                    dengan positif, maka gaya pada muatan akan menjauhi satu sama lain (saling
+                    tolak). Begitu juga sebaliknya jika kedua muatan memiliki tanda yang berlawanan maka gaya
+                    akan mengarah ke muatan yang lainnya (saling tarik). Gambaran interaksi masing-masing
+                    muatan dapat dilihat pada Gambar berikut</p>
+                <figure class="text-center figure">
+                    <img src="https://i.ibb.co/dJv8xLb/hukum-5.png" class="img-fluid" alt="hukum-5" border="0">
+                    <figcaption class="figure-caption"> Interaksi antar partikel bermuatan. (a) muatan sejenis, (b)
+                        muatan tidak sejenis
+                    </figcaption>
+                </figure>
+                <p class="a">
+                    Dalam sistem satuan SI, satuan untuk muatan adalah coulomb (C). Untuk muatan
+                    elementer disimbolkan dengan e dengan nilai sebesar 1,6022 x 10<sup>-19</sup> C. Nilai untuk satuan
+                    SI pada konstanta k adalah sebagai berikut:
+                </p>
+                <code>k = 8,988 x 10<sup>9</sup> N.m2/C<sup>2</sup></code>
+                <p class="a">Konstanta k sering ditulis dengan konstanta lain є<sub>0</sub> yang disebut dengan
+                    permitivitas
+                    ruang hampa. Nilai k diperoleh dari persamaan berikut ini.</p>
+                <div class="text-cent"><img src="https://i.ibb.co/8NbFSDk/hukum-6.png" alt="hukum-6" border="0"
+                        class="img-fluid"></div>
+                <p>dimana є<sub>0</sub> = 8,85 x 0<sup>-12</sup> C<sup>2</sup>/N.m<sup>2</sup></p>
+                <div class="m-1 p-1" style="border:1px solid black">
+                    <h4>Contoh Soal</h4>
+                    <p style="text-align: justify;">Tiga partikel bermuatan disusun dalam satu garis seperti pada gambar
+                        berikut. Hitunglah gaya
+                        neto pada partikel ketiga yang disebabkan oleh dua muatan lainnya.</p>
+                    <h4>Penyelesaian</h4>
+                    <p style="text-align: justify;">Gaya neto partikel 3 merupakan jumlah vector F<sub>31</sub> dan
+                        F<sub>32</sub>. </p>
+                    <div class="text-center">
+                        <img src="https://i.ibb.co/pRycLsw/New-Project-5.png" alt="" class="img-fluid">
+                    </div>
+                    <p style="text-align: justify;">Besar gaya 1,5 N dengan arah gaya ke kiri</p>
+                </div>
+
+                <h4>Medan Listrik</h4>
+                <p class="a">
+                    Adanya gaya antara dua benda bermuatan yang berada pada jarak tertentu
+                    memunculkan gagasan adanya medan di sekitar muatan tersebut. Ide medan pertama kali
+                    dicetuskan oleh Michael Faraday (1791-1867). Menurut Faraday suatu medan listrik keluar
+                    dari setiap muatan. Ketika muatan kedua di tempatkan di sekitar muatan pertama, maka
+                    muatan kedua akan mengalami gaya yang disebabkan oleh adanya medan listrik di area
+                    tersebut.
+                </p>
+                <p class="a">Gaya listrik pada sebuah benda bermuatan dikerahkan oleh medan listrik yang
+                    diciptakan oleh benda bermuatan lainnya. Gaya adalah sebuah besaran vector, sehingga
+                    medan listrik juga adalah besaran vector. Kita mendefinisikan medan listrik 𝐸⃗ disebuah titik
+                    sebagai gaya listrik 𝐹 yang dialami oleh sebuah muatan uji di titik tersebut, dibagi dengan
+                    muatan uji q. dengan kata lain bahwa medan listrik sama dengan gaya listrik per satuan
+                    muatan yang dialami oleh sebuah muatan di titik tersebut.</p>
+                <code>E = <sup>F</sup>/<sub>q</sub></code>
+                <p class="a">Oleh karena medan listrik adalah besaran vector, makan medan listrik sering disebut
+                    juga dengan medan vektor. Medan listrik divisualisasikan dengan garis-garis medan atau
+                    garis-garis gaya. Untuk suatu muatan positif, garis-garis gaya secara radial mengarah ke luar
+                    dari muatan sedangkan untuk muatan negatif garis-garis gaya secara radial mengarah ke
+                    dalam muatan. Untuk lebih jelasnya dapat dilihat pada dua gambar dibawah. Kita selalu dapat
+                    menggambarkan garis-garis sehingga jumlah garis yang berawal dari muatan positif, atau
+                    berakhir di muatan negatif, sebanding dengan besar muatan. Daerah yang memiliki medan
+                    listrik yang besar memiliki jumlah garis-garis gaya yang rapat. Berdasarkan hal tersebut dapat
+                    dikatakan bahwa sifat umum dari garis medan listrik adalah semakin rapat garis-garis
+                    tersebut, semakin kuat medan listriknya.
+                </p>
+                <figure class="text-center">
+                    <img src="https://i.ibb.co/rddV54x/medan-Listrik1.png" class="img-fluid" alt="medan-Listrik1"
+                        border="0">
+                    <figcaption class="figure-caption">Garis-garis medan listrik satu muatan positif (a) dan satu muatan
+                        negatif (b)
+                    </figcaption>
+                </figure>
+                <figure class="text-center">
+                    <img src="https://i.ibb.co/0JMp76q/hukum-4.png" class="img-fluid" alt="medan-Listrik1" border="0">
+                    <figcaption class="figure-caption"> (a) Garis-garis medan listrik pada
+                        dua muatan yang berbeda jenis, (b) Garis-garis
+                        medan listrik pada dua muatan yang sejenis
+                    </figcaption>
+                </figure>
+                <h4>Potensial Listrik </h4>
+                <p class="a">Potensial listrik merupakan energi potensial per satuan muatan. Potensial listrik
+                    disimbolkan dengan V. JIka muatan uji positif Q dalam sebuah medan listrik memiliki energi
+                    potensial (EP) pada titik a (relatif terhadap energi potensial nol), maka potensial listrik
+                    V<sub>a</sub>
+                    adalah </p>
+                <code>𝑉<sub>𝑎</sub> = (𝐸𝑃<sub>a</sub>)/Q </code>
+                <p class="a">Yang dapat diukur dari potensial listrik adalah perbedaan potensial listrik atau dikenal
+                    dengan beda potensial (tegangan). Untuk mencari beda potensial di antar dua titik A dan B di
+                    dalam sebuah medan listrik, maka kita menggerakkan muatan q dari A ke B dan selalu
+                    mempertahankannya dalam keadaan setimbang. Beda potensial didefinisikan dengan
+                    Persamaan berikut:</p>
+                <code>V<sub>B</sub> - V<sub>A</sub> = (W<sub>AB</sub>)/q</code>
+                <p class="a">Satuan SI dari beda potensial yang didapatkan dari persamaan (10-4) adalah
+                    joule/coulomb. Kombinasi ini terjadi begitu sering sehingga digunakan sebuah satua khusus.
+                    Volt (disingkat V), untuk menyatakan satuan tersebut; yakni</p>
+                <code>1 volt = 1 joule/coulomb</code>
+                <p class="a">Biasanya titik A dipilih pada suatu jarak jauh dari semua muatan (tepatnya tak berhingga),
+                    dan potensial listrik V<sub>A</sub> pada jarak yang tak terhingga ini diambil dengan cara sebarang
+                    sebagai nol. W yang mewakili W<sub>AB</sub> adalah kerja yang harus dilakukan oleh pengaruh luar
+                    untuk menggerakkan muatan uji q dari tak berhingga ke titik yang ditinjau berpindah sejauh
+                    d</p>
+                <p style="text-align:justify">Gaya listrik (F) pada muatan q adalah qE. Kerja W yang dilakukan oleh
+                    pengaruh gaya ini
+                    adalah seperti Persamaan berikut:</p>
+                <code>𝑊<sub>𝐴𝐵</sub> = 𝑭𝑑 = 𝑞𝑬𝑑…</code>
+                <p style="text-align:justify">Dengan mensubtitusidua persamaan diatas maka
+                    diperoleh seperti pada Persamaan berikut:</p>
+                <code>𝑉<sub>𝐵</sub> − 𝑉<sub></sub> = (𝑊<sub>𝐴𝐵</sub>)/q = Ed</code>
+                <p class="a">Persamaan diatas menunjukkan hubungan antara perbedaan potensial dan kekuatan
+                    medan untuk sebuah kasus khusus sederhana. Satuan SI untuk E adalah volt/meter (V/m). Jika pengaruh
+                    gaya luar tersebut menyebabkan benda uji bergerak melalui pergeseran di sepanjang jalan dari A ke B,
+                    maka elemen kerja yang dilakukan oleh pengaruh gaya luar adalah F. dl sehingga persamaan beda
+                    potensial terlihat pada Persamaan berikut:</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/zGVhQfM/dinamis1.png" alt="" class="img-fluid">
+                </div>
+                <p class="a">Jika titik A diambil sejauh tak berhingga dan potensial VA di tak berhingga diambil
+                    sebesar nol, maka V pada titik B, sebesar pada Persamaan berikut.</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/2S5cFkh/dinamis2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!-- Card ListrikDinamis -->
+        <div class="card mb-4" id="ldinamis">
+            <div class="card-body">
+                <h2>Listrik Dinamis</h2>
+                <h4>Tegangan</h4>
+                <p class="a">
+                    Tegangan listrik dikenal juga dengan istilah beda
+                    potensial listrik (seperti yang dibahas sebelumnya) dan gaya
+                    gerak listrik. Beda potensial (V) menghasilkan muatan berasal
+                    dari energi yang hilang/terpakai. Sedangkan gaya gerak listrik
+                    (ε) menghasilkan muatan berasal dari energi yang diperoleh
+                    dari sumber tegangan.</p>
+                <p class="a">Penggunaan baterai bertujuan untuk menghasilkan beda
+                    potensial yang kemudian dapat menyebabkan muatan
+                    bergerak. Ketika penghantar dihubungkan dengan terminal
+                    baterai (seperti <b>Gambar bagian a</b> di bawah) maka dihasilkan rangkaian
+                    listrik. Skema rangkaian listrik terlihat pada <b>Gambar bagian b</b>
+                    dengan simbol tegangan (+/-)</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/qszxsfW/rangkaianlistriksderhana.png" alt="rangkaianlistriksderhana"
+                        class="img-fluid" border="0">
+                </div>
+                <h4 class="mt-4">Arus Listrik</h4>
+                <p class="a">Pada Gambar dibawah ini, muatan mengalir pada arah yang tegak lurus terhadap permukaan
+                    luasan A. (luasan yang dimaksud adalah area persilangan dari kawat).</p>
+                <figure class="text-center">
+                    <img src="https://i.ibb.co/KmNjSwQ/aruslistrik.png" alt="aruslistrik" border="0">
+                </figure>
+                <p class="a">
+                    Anggap q adalah jumlah muatan yang mengalir melalui luasan A dalam interval waktu t
+                    dan arah arus tegak lurus terhadap luasan. Maka arus I adalah sama dengan jumlah muatan
+                    dibagi dengan interval waktu (lihat Persamaan (berikut).
+                </p>
+                <code>i = <sup>dq</sup>/<sub>dt</sub></code>
+                <p style="text-align:center">Satuan-satuan SI yang sesuai adalah ampere (disingkat A) untuk i, coulomb
+                    untuk muatan q, dan detik untuk t</p>
+                <p class="a">
+                    ita dapat menyatakan arus dalam kecepatan menyimpang dari muatan yang bergerak.
+                    Misalnya terdapat <i>n</i> partikel bermuatan persatuan volum. <i>n</i> adalah konsentrasi partikel
+                    dengan satuan SI m<sup>-3</sup>. Anggap bahwa semua partikel bergerak dengan kecepatan
+                    penyimpang yang sama dengan besar v<sub>d</sub>. partikel-partikel yang mengalir keluar ujung
+                    silinder
+                    yang dinaungi dengan panjang v<sub>d</sub>dt selama dt adalah partikel yang di dalam silinder selama
+                    selang waktu dt. Volume silinder tersebut adalah Av<sub>d</sub>dt, dan banyaknya partikel di
+                    dalamnya
+                    adalah nAv<sub>d</sub>dt. Jika setiap partikel mempunyai muatan <i>q</i>, muatan dQ yang mengalir
+                    keluar
+                    dari ujung silinder itu selama waktu dt terlihat pada persamaan berikut:</p>
+                <code><i>𝑑𝑄 = 𝑞(𝑛𝐴v<sub>d</sub>𝑑𝑡) = 𝑛𝑞v<sub>d</sub>𝑑t</i></code>
+                <p>dan arus menjadi,</p>
+                <code><i>𝑱 = <sup>dQ</sup>/<sub>dt</sub>= 𝑛𝑞v<sub>d</sub> A</i></code>
+                <p class="a">Arus persatuan luas penapang dinamakan kerapatan arus (current density) J seperti terlihat
+                    pada Persamaan (10-12).</p>
+                <code><i>𝑱 = <sup>I</sup>/<sub>A</sub>= 𝑛𝑞v<sub>d</sub></i></code>
+                <p class="a">Satuan kerapatan arus adalah ampere permeter kuadrat (A/m2)</p>
+                <h4 class="mt-4">Hambatan</h4>
+                <p class="a">Jika kita memakaikan perbedaan potensial yang sama di ujung-ujung tongkat tembaga
+                    dan tongkat kayu yang mempunyai geometri yang serupa, maka dihasilkan arus-arus yang
+                    sangat berbeda. Karakteristik penghantar yang menyebabkan hal ini adalah hambatan
+                    (resistance). Hambatan didefinisikan dari sebuah penghantar (yang sering dinamakan
+                    tahanan = resistor dengan simbol R) di antara dua titik dengan menggunakan sebuah beda
+                    potensial V di antara titik-titik tersebut, dan dengan mengukur arus I, dan kemudian
+                    melakukan pembagian seperti terlihat pada Persamaan berikut</p>
+                <code><i>R = <sup>V</sup>/<sub>i</sub></i></code>
+                <p class="a">V dinyatakan dalam volt dan i dinyatakan dalam ampere, maka hambatan dinyatakan dalam
+                    ohm (&ohm;) dapat dinyatakan dengan dua persamaan berikut ini</p>
+                <div class="text-center">
+                    <img src="https://i.ibb.co/F45zcd4/hukum-3.png" alt="hukum-3" class="img-fluid" border="0">
+                </div>
+                <p class="a">ρ adalah resistivitas atau hambat jenis merupakan karakteristik dari suatu bahan
+                    (Lihat Persamaan diatas. Sedangkan konduktivitas (𝜎) adalah kebalikan dari resistivitas
+                    seperti Persamaan berikut:</p>
+                <code>&ohm; = <sup>1</sup>/<sub>&rho;</sub></code>
+                <p>Satuan SI dari resistivitas adalam Ω.m. Sedangkan hambatan (Ω) dapat dilihat pada
+                    Persamaan berikut:</p>
+                <code>R = &rho; . <sup>l</sup>/<sub>a</sub></code>
+                <p class="a">Hambat jenis bahan kabel penghantar (&rho;) dipengaruhi suhu. Dapat dirumuskan sebagai
+                    berikut:</p>
+                <code>&rho; = &rho;20[1 + 𝛼(𝑡<sub>𝐶</sub> − 20
+                    <sup>𝑜</sup>𝐶)] </code>
+                <p>Keterangan</p>
+                <ul style="list-style-type: none; text-align:justify">
+                    <li>ρ<sub>20</sub> = hambat jenis bahan kabel penghantar pada suhu 20<sup>o</sup>C</li>
+                    <li><i>𝛼</i> = koefisien temperatur resistivitas</li>
+                </ul>
+                <p class="a">
+                    Karena resistivitas sebuah material berubah dengan suhu, maka hambatan sebuah
+                    konduktor spesifik juga berubah dengan suhu. Untuk jangkauan suhu yang tidak terlalu
+                    besar, perubahan ini secara aproksimasi adalah sebuah hubungan linear yang ditunjukkan
+                    sebagai berikut.
+                </p>
+                <code>𝑅(𝑇) = 𝑅<sub>0</sub>[1 + 𝛼(𝑇 − 𝑇<sub>0</sub>)]</code>
+                <p class="a">R(T) adalah hambatan pada suhu T dan R<sub>0</sub> adalah pada suhu T<sub>0</sub>,
+                    seringkali diambil 0<sup>0</sup>C atau
+                    20<sup>0</sup>C.</p>
+            </div>
+        </div>
+
+        <!-- Alat Ukur Listrik-->
+        <div class="card mb-4" id="alatukur">
+            <div class="card-body">
+                <h2>Alat Ukur Listrik</h2>
+                <p class="a">Untuk mempelajari arus dalam rangkaian, diperlukan pemahaman untuk mengukur arus
+                    dan tegangan. Kata “rangkaian” bermakna rangkaian tertutup dari sirkulasi arus yang
+                    mengalir. Alat untuk mengukur arus listrik adalah Amperemeter.</p>
+                <figure class="figure text-center">
+                    <img src="https://i.ibb.co/cQVmjYy/hukum-2.png" class="figure-img text-center img-fluid rounded"
+                        alt="...">
+                    <figcaption class="figure-caption "><strong>(a)</strong> sketsa rangkaian sebenarnya yang digunakan
+                        untuk mengukur arus yang mengalir pada lampu
+                        dan beda potensial yang melewatinya. <strong>(b)</strong> diagram skematik dari rangkaian pada
+                        bagian <strong>(a)</strong>. <strong>(c)</strong> Multimeter
+                        digital yang digunakan untuk mengukur beda potensial.
+                    </figcaption>
+                </figure>
+                <p class="a">Voltmeter mengukur beda potensial, atau tegangan, antara dua ujung filamen lampu.
+                    Jika kita menggunakan dua alat ukur secara bersamaan seperti Gambar a, kita dapat
+                    memindahkan voltmeter dan melihat keberadaannya mempengaruhi hasil pengukuran arus.
+                    Voltmeter dipasang paralel dengan lampu sehingga tidak mempengaruhi pegukuran arus listrik. Gambar c
+                    menunjukan multimeter digital yang dapat mengukur tegangan, arus,
+                    ataupun tahana.</p>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
